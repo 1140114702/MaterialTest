@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 //                Toast.makeText(MainActivity.this, "点击了FAB按钮", Toast.LENGTH_SHORT).show();
-                Snackbar.make(v, "是否删除此...\n点击FAB按钮", Snackbar.LENGTH_SHORT)
+                Snackbar.make(v, "是否删除此...", Snackbar.LENGTH_SHORT)
                         .setAction("确定", new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
