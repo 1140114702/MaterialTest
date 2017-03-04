@@ -136,6 +136,7 @@ public class MainActivity extends AppCompatActivity {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
+                                loadMore=0;
                                 initData(true);
                                 adapter.notifyDataSetChanged();
                                 xRecyclerView.refreshComplete();
