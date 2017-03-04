@@ -32,13 +32,13 @@ public class FruitAdapter extends RecyclerView.Adapter<FruitAdapter.MyHolder> {
         if (mContext == null) {
             mContext = parent.getContext();
         }
-        View view = LayoutInflater.from(mContext).inflate(R.layout.fruit_item,parent,false);
+        View view = LayoutInflater.from(mContext).inflate(R.layout.fruit_item, parent, false);
         final MyHolder holder = new MyHolder(view);
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
-                FruitBean fruitBean = mList.get(position);
+                FruitBean fruitBean = mList.get(position - 1);
                 Intent intent = new Intent(mContext, FruitActivity.class);
                 intent.putExtra(FruitActivity.FRUIT_NAME, fruitBean.getName());
                 intent.putExtra(FruitActivity.FRUIT_IMAGE_ID, fruitBean.getImageId());
