@@ -188,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void onClick(View v) {
                                 //定位到第一行
-                                xRecyclerView.scrollToPosition(0);
+                                xRecyclerView.smoothScrollToPosition(0);
                             }
                         })
                         .setActionTextColor(0xff0285cf)
